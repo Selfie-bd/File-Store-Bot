@@ -1,8 +1,8 @@
 {
-    "name": "FileStoreBot",
-    "description": "file saver & Link Bot",
-    "repository": "https://telegra.ph/file/d2a35663b79c09cdc138c.png",
-    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "name": "FileStoreDcBot",
+    "description": "File Store bot With Same more Features ✨",
+    "repository": "",
+    "logo": "",
     "keywords": ["telegram", "fistorebot", "bot", "nodejs"],
     "env": {
         "TOKEN": {
