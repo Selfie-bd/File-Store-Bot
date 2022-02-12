@@ -35,11 +35,11 @@ bot.start(async(ctx) => {
     //welcoming message on /start and if there is a query available we can send files
 
     if (length == 1) {
-        ctx.reply(`<b> 👋Hi I will store files for you and give sharable links .I can also make the files available for all users</b>`, {
+        ctx.reply(`<b> I will store files for you and give sharable links. \nI can also make the files available for all users.\n\n 〽️ Powered by@GroupDcBots</b>`, {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Search 🔎', switch_inline_query: '' }, { text: 'Link 🔗', callback_data: 'POP' }]
+                    [{ text: 'Search', switch_inline_query: '' }, { text: 'Link', callback_data: 'POP' }]
                 ]
             }
         })
@@ -75,17 +75,17 @@ bot.action('POP', (ctx) => {
 //help
 
 bot.command('/help', (ctx) => {
-            ctx.reply(`Hello 👋 <b>${ctx.from.first_name}</b> you can send me 📁 files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`, {
+            ctx.reply(`Hello  <b>${ctx.from.first_name}</b> you can send me 📁 files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)\n\n〽️ Powered by@GroupDcBots`, {
                     parse_mode: 'HTML',
                     reply_markup: {
                         inline_keyboard: [
-                            [{ text: 'Join Channel 🔔', url: 't.me/lkhitech' }]
+                            [{ text: '❗Join Channel❗', url: 't.me/groupdcbots' }]
                         ]
                     } 
                      
                     }) 
                     if (ctx.from.id == process.env.ADMIN) {
-                        ctx.reply('https://telegra.ph/File-Store-Bot-Admin-commands-07-17')
+                        ctx.reply('https://telegra.ph/Vijay-02-12')
                 }
             })
 
@@ -99,7 +99,7 @@ bot.command('/help', (ctx) => {
             console.log(text);
             if (ctx.from.id == process.env.ADMIN) {
                 saver.removeFile(text)
-                ctx.reply('✅Removed')
+                ctx.reply('Removed ✅')
             }
         })
 
@@ -108,7 +108,7 @@ bot.command('/help', (ctx) => {
         bot.command('clear', (ctx) => {
             if (ctx.from.id == process.env.ADMIN) {
                 saver.deleteCollection()
-                ctx.reply('✅Removed')
+                ctx.reply('Removed ✅')
             }
 
         })
@@ -124,7 +124,7 @@ bot.command('/help', (ctx) => {
             let id = parseInt(text)
             if (ctx.from.id == process.env.ADMIN || ctx.from.id == process.env.ADMIN1 || ctx.from.id == process.env.ADMIN2) {
                 saver.removeUserFile(id)
-                ctx.reply('✅Removed')
+                ctx.reply('Removed ✅')
             }
         })
 
@@ -158,7 +158,7 @@ bot.command('/help', (ctx) => {
 
                         }
                     }
-                    ctx.reply(`<b>✅Total active users :</b>${userId.length - totalFail.length}\n❌<b>Total failed broadcast:</b>${totalFail.length}`, {
+                    ctx.reply(`<b>✅ Total active users :</b>${userId.length - totalFail.length}\n❌<b>Total failed broadcast:</b>${totalFail.length}`, {
                         parse_mode: 'HTML'
                     })
 
@@ -168,7 +168,7 @@ bot.command('/help', (ctx) => {
                     ctx.reply('Broadcasting started -(Message is broadcasted from last joined to first)')
 
                 } else {
-                    ctx.replyWithAnimation('https://media.giphy.com/media/fnuSiwXMTV3zmYDf6k/giphy.gif')
+                    ctx.replyWithAnimation('https://giphy.com/gifs/dog-working-typing-jkSvCVEXWlOla')
                 }
 
             })
@@ -229,7 +229,7 @@ bot.command('/help', (ctx) => {
             await saver.checkBan(`${ctx.from.id}`).then((res) => {
                 console.log(res);
                 if (res == true) {
-                    ctx.reply('⚠YOU ARE BANNED FOR MISUSING BOT, CONTACT ADMIN')
+                    ctx.reply('⚠ YOU ARE BANNED FOR MISUSING BOT, CONTACT ADMIN')
                 } else {
                     saver.saveFile(fileDetails)
                     ctx.reply(`https://t.me/${process.env.BOTUSERNAME}?start=${document.file_unique_id}`)
@@ -333,7 +333,7 @@ bot.command('/help', (ctx) => {
                             caption: item.caption,
                             reply_markup: {
                                 inline_keyboard: [
-                                    [{ text: "🔎Search again", switch_inline_query: '' }]
+                                    [{ text: "Search again", switch_inline_query: '' }]
                                 ]
                             }
                         }
