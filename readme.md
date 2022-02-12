@@ -1,28 +1,18 @@
-
-<p align ="center">
-   <a href ="https://nodejs.org">
-     <img src = "https://forthebadge.com/images/badges/uses-js.svg">
-        </p>
-   </a>
-
-
-
 # File Store Bot
 
-Bot generates sharable link inside telegram for documents and make files public via inline search<br><br><br><br>
-       
+Bot generates sharable link inside telegram for documents and make files public via inline search.
 
-[![HITECH](https://img.shields.io/badge/LKHITECH-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/lkhitech)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=selfie-bd&repo=filestreamdcbot&theme=tokyonight)](https://github.com/selfie-bd/filestreamdcbot&bg_color=#24292F) 
+
+## if You Face any issues ? Create a issue in GitHub or Contact [Support Group](t.me/groupdc)
 
 # Deploy Heroku 
 
-<a href="https://heroku.com/deploy?template=https://github.com/kjeymax/File-Store-Bot">
+<a href="https://heroku.com/deploy?template=https://github.com/selfie-bd/FileStoreDcBot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
-<br><br>
 
-<br>
-<b>Required details</b> <br>
+# Required details</b> <br>
 
 
 <code>TOKEN</code> - Get bot token from bot father
@@ -96,8 +86,6 @@ you can remove files 3 ways
 <code>/stats</code>
 
 (You will get total users started your bot,Real time data will be updated after a succesfull broadcast)
-
-
 
 <b>If you wish to support me follow me on github as a token of support</b>
 
