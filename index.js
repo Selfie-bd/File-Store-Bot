@@ -35,11 +35,11 @@ bot.start(async(ctx) => {
     //welcoming message on /start and if there is a query available we can send files
 
     if (length == 1) {
-        ctx.reply(`<b> I will store files for you and give sharable links. \nI can also make the files available for all users.\n\n 〽️ Powered by@GroupDcBots</b>`, {
+        ctx.reply(`<b> I will store files for you and give sharable links ⚡ \n\nI can also make the files available for all users.\n\n 〽️ Powered by@GroupDcBots</b>`, {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Search', switch_inline_query: '' }, { text: 'Link', callback_data: 'POP' }]
+                    [{ text: 'Search 🔎', switch_inline_query: '' }, { text: 'Link', callback_data: 'POP' }]
                 ]
             }
         })
@@ -333,7 +333,7 @@ bot.command('/help', (ctx) => {
                             caption: item.caption,
                             reply_markup: {
                                 inline_keyboard: [
-                                    [{ text: "Search again", switch_inline_query: '' }]
+                                    [{ text: "Search again 💫", switch_inline_query: '' }]
                                 ]
                             }
                         }
